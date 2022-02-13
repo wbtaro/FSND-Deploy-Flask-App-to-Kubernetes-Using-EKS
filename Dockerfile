@@ -1,7 +1,6 @@
 FROM python:stretch
-RUN git clone \
-    https://github.com/wbtaro/Flask-JWT-App.git
-WORKDIR Flask-JWT-App
+RUN mkdir FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS
+WORKDIR FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS
+COPY . .
 RUN pip install -r requirements.txt
-COPY .env_file .
 ENTRYPOINT gunicorn -b :8080 main:APP
