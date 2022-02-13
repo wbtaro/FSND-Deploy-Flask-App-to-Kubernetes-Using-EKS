@@ -18,6 +18,8 @@ docs/_build/
 __pycache__
 .env_file
 venv
+trust.json
+iam-role-policy.json
 
 # Coverage reports
 htmlcov/
