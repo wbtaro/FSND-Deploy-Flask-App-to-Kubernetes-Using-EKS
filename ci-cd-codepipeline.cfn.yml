@@ -62,7 +62,6 @@ Parameters:
     MaxLength: 100
     ConstraintDescription: You must enter a kubectl IAM role
 
-
 Metadata:
   AWS::CloudFormation::Interface:
     ParameterGroups:
